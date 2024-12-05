@@ -7,6 +7,14 @@ public class Main {
         Person m2=new Person("Adarsh",18,"Mumbai,India");
         Student s1=new Student(45,"Maths");
         Student s2=new Student("Pratham",15,"Mumbai",21,"English");
+        Teacher teacher1 = new Teacher("John", 30, "1234 Elm Street", "Math", 50000);
+
+        // Display teacher information
+        teacher1.displayInfo();
+
+        // Assign a task and get reports (using methods from the CanManage interface)
+        teacher1.assignTask();
+        teacher1.getReports();
         Student s3=new Student(s1);
         Person m5=new Person(m2);
         m1.displayInfo();
